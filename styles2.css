@@ -1,0 +1,177 @@
+body {
+  font-family: "Roboto Mono", Arial, sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-color: #f7f7f7; /* Changed to a consistent background */
+}
+
+/* Header Styles */
+header {
+  background-color: #333; /* Dark background for contrast */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0; /* Removed margin for better alignment */
+}
+
+h2 {
+  padding-left: 280px;
+  font-size: 20px;
+  color: #007bff; /* Primary color for headings */
+}
+
+/* Section Styles */
+section {
+  margin: 20px 0; /* Margin for spacing between sections */
+}
+
+/* Filter Section Styles */
+#filter {
+  margin-left: 40%;
+  display: flex;
+  justify-content: flex-start; /* Space between left and right */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-filter {
+  display: flex; /* Align items in this section */
+  align-items: center;
+}
+
+input,
+select,
+button {
+  margin-left: 10px; /* Margin between items */
+  padding: 8px; /* Added padding for better touch targets */
+  border-radius: 4px; /* Rounded corners for inputs */
+  border: 1px solid #ccc; /* Border for inputs */
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Consistent button color */
+  color: white;
+  border: none;
+  padding: 8px 15px; /* Adjusted padding for buttons */
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for buttons */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table Styles */
+table {
+  width: 80%; /* Set to 80% width of the container */
+  max-width: 1000px; /* Set a max width to avoid too wide tables */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff; /* Header color */
+  color: white;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Code Comparison Styles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textarea-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#exercise-title {
+  margin-top: 0px;
+  padding-left: 50px;
+  font-size: 1.5em; /* Change the font size as needed */
+  color: #110bc4c3;
+  font-weight: bold;
+}
+textarea {
+  width: 580px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: monospace;
+  box-sizing: border-box;
+  resize: none; /* Disable resizing */
+}
+
+/* Message Style */
+.message {
+  margin-top: 20px;
+}
+.textarea-container label {
+  display: block; /* Make label take full width */
+  text-align: center; /* Center the label text */
+  margin-bottom: 5px; /* Space between label and textarea */
+  font-size: 1.5em; /* Change the font size as needed */
+  color: #333;
+  font-weight: bold;
+}
+/* Button Style for Comparison */
+#compareCodeForm button {
+  background-color: #4caf50; /* Green for comparison button */
+  color: white;
+}
+
+#compareCodeForm button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.back-arrow-2 {
+  position: fixed;
+  top: 25%; /* Adjusted for visibility */
+  left: 160px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #007bff; /* Blue color */
+  transition: color 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+.back-arrow:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Scale effect on hover */
+}
+.back-arrow {
+  position: fixed;
+  top: 0%;
+  left: 10px;
+  font-size: 35px;
+  text-decoration: none;
+  color: #f0ebeb;
+  transition: color 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+.back-arrow:hover {
+  color: #666;
+  transform: scale(1.1);
+}

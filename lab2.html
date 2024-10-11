@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab 2</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lab 2 - Assignment Management</h1>
+    </header>
+
+    <a href="javascript:void(0)" class="back-arrow" onclick="goBackToLabs()"
+      >&#8592;</a
+    >
+    <section id="filter">
+      <div class="left-filter">
+        <input type="text" id="search-keyword" placeholder="Rearch..." />
+        <select id="language-filter">
+          <option value="">All languages</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="c">C</option>
+        </select>
+        <button id="filter-btn">Filter</button>
+      </div>
+      <button id="show-add-exercise">Add new exercise</button>
+    </section>
+
+    <section id="exercise-list">
+      <h2>Danh Sách Bài Tập</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Exercise Name</th>
+            <th>Date</th>
+            <th>Progress</th>
+            <th>Language</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Exercise 1: CheckCode</td>
+            <td>11/10/2024</td>
+            <td>
+              <progress value="90" max="100"></progress>
+              <span>90%</span>
+            </td>
+            <td>All languages</td>
+            <td>
+              <button
+                class="select-exercise"
+                data-title="Exercise 1:  - Compare code"
+              >
+                Select
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="coding-environment" style="display: none">
+      <a href="javascript:void(0)" class="back-arrow-2" id="backArrow"
+        >&#8592;
+      </a>
+      <div class="container">
+        <h2 id="exercise-title"></h2>
+        <div class="textarea-container">
+          <div>
+            <label for="code1">Code 1:</label>
+            <textarea id="code1" name="code1" required></textarea>
+          </div>
+          <div>
+            <label for="code2">Code 2:</label>
+            <textarea id="code2" name="code2" required></textarea>
+          </div>
+        </div>
+        <button type="submit" id="compareCodeBtn">Compare</button>
+        <div class="message" id="message"></div>
+      </div>
+    </section>
+
+    <script src="js2.js"></script>
+  </body>
+</html>

@@ -17,7 +17,7 @@ function openTab(tabId, element) {
 
 // nút return
 function goBackToLabs() {
-  window.location.href = "index.html#labs";
+  window.location.href = "index.html";
 }
 // chức năng Implement
 
