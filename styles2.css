@@ -147,7 +147,7 @@ textarea {
 }
 .back-arrow-2 {
   position: fixed;
-  top: 25%; /* Adjusted for visibility */
+  top: 27%; /* Adjusted for visibility */
   left: 160px;
   font-size: 30px;
   text-decoration: none;
