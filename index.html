@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCI-2024</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="logo">Subject Management</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <a href="javascript:void(0);" class="login" onclick="openModal()"
+        >Login</a
+      >
+    </div>
+
+    <div class="navbar">
+      <a id="home-tab" class="active" onclick="showTab('home', this)">Home</a>
+      <a id="about-tab" onclick="showTab('about', this)">About</a>
+      <a id="labs-tab" onclick="showTab('labs', this)">Labs</a>
+    </div>
+
+    <main id="content">
+      <!-- Home Tab Content -->
+      <div id="home" class="tab-content active">
+        <h1>Welcome to Subject Management</h1>
+        <p>This is the default home tab content.</p>
+      </div>
+
+      <!-- About Tab Content (CV) -->
+      <div id="about" class="tab-content">
+        <div class="cv-container">
+          <div class="left-column">
+            <div class="profile-pic">
+              <img src="/img/hinh1.jpg" alt="Profile Picture" />
+            </div>
+            <div class="contact-info">
+              <h2>Contact Information</h2>
+              <p><i class="fa fa-phone"></i> 0362 195 048</p>
+              <p><i class="fa fa-envelope"></i> minhquocxzd@gmail.com</p>
+              <p><i class="fa fa-globe"></i> www.minhquoc.com</p>
+              <p>
+                <i class="fa fa-map-marker"></i> 123, street name, city/province
+              </p>
+            </div>
+            <div class="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li>Computer Skills <span class="stars">★★★★☆</span></li>
+                <li>Graphic Design <span class="stars">★★★★★</span></li>
+                <li>Presentation <span class="stars">★★★★☆</span></li>
+                <li>Languages <span class="stars">★★★☆☆</span></li>
+              </ul>
+            </div>
+            <div class="hobbies">
+              <h2>Hobbies</h2>
+              <ol>
+                <li>Play Game</li>
+                <li>Relax</li>
+                <li>...</li>
+              </ol>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="name-title">
+              <h1>Đỗ Minh Quốc</h1>
+              <h3>(Student ID: 23130261)</h3>
+            </div>
+            <div class="education">
+              <h2>Education</h2>
+              <p>Academic Year: 2024</p>
+              <p>Field of Study: IT</p>
+              <p>Student: Year 2</p>
+              <p>Course Project: Human-Computer Interaction</p>
+            </div>
+            <div class="work-experience">
+              <h2>Experience</h2>
+              <p>Working Time: Case by case</p>
+              <p>Ho Chi Minh City University of Agriculture and Forestry</p>
+              <p>Currently enhancing knowledge and experience 😎😎😎</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login Modal -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Login</h2>
+          <form id="loginForm" onsubmit="return handleLogin(event)">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="sign-in-button">Sign in</button>
+
+            <div class="signup">
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Labs Tab Content -->
+      <div id="labs" class="tab-content">
+        <div class="grid-container">
+          <div class="grid-item">
+            <h1><a href="lab1.html">Lab1</a></h1>
+          </div>
+          <div class="grid-item">
+            <h1>
+              <a href="#" onclick="showLabDetails('lab2-details')">Lab2</a>
+            </h1>
+          </div>
+          <div class="grid-item">
+            <h1>
+              <a href="#" onclick="showLabDetails('lab3-details')">Lab3</a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js.js"></script>
+  </body>
+</html>

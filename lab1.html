@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 - Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="stylelab1.css">
+</head>
+<body>
+    <header>
+        <h1>Lab1 - Student management
+        </h1>
+        <a href="javascript:void(0)" class="back-arrow" onclick="goBackToLabs()"
+      >&#8592;</a>
+        <nav>
+            <ul>
+                <li><a href="#requirement" class="active" onclick="openTab('requirement', this)">Requirement</a></li>
+                <li><a href="#design" onclick="openTab('design', this)">Design</a></li>
+                <li><a href="#implement" onclick="openTab('implement', this)">Implement</a></li>
+        </nav>
+    </header>
+
+    <section id="requirement" class="tab-content active">
+        <h2>Requirement</h2>
+        <p>
+            <b>Yêu cầu:</b> Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như <b>lớp môn học, giảng viên,</b>… Sau
+             đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các tính
+            năng <b>thêm, sửa, xóa, tìm kiếm</b> cho đối tượng đó. Ví dụ, làm chức năng <B>Quản lý Sinh viên</B>, bao gôm tính 
+            năng <b>thêm, sửa, xóa, tìm kiếm.</b> Chú ý: Các thành viên trong nhóm không được chọn các đối tượng giống nhau.
+        </p>
+        
+    </section>
+
+    <section id="design" class="tab-content" >
+        <h2>Design</h2>
+        <p>
+            <a href="path_to_image_design_on_paper.jpg" target="_blank">Thiết kế trên giấy</a><br>
+            <a href="path_to_image_screenshot_html.jpg" target="_blank">Chụp lại màn hình thiết kế trên HTML</a>
+        </p>
+    </section>
+
+    <section id="implement" class="tab-content" >
+        
+        
+
+        <section class="form-section">
+   
+    <form id="studentForm">
+      <label for="studentId">Student id:</label>
+      <input type="text" id="studentId" name="studentId" required>
+
+      <label for="studentName">Student name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="major">Specialization:</label>
+      <input type="text" id="major" name="major" required>
+
+      <button type="submit">Add student</button>
+    </form>
+  </section>
+
+  <section class="search-section">
+    
+    <input type="text" id="searchInput" placeholder="Search student...">
+    <button>Search</button>
+  </section>
+
+  <section class="table-section">
+   
+    <table>
+      <thead>
+        <tr>
+          <th>Student id</th>
+          <th>Student name</th>
+          <th>Specialization</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+     
+      </tbody>
+    </table>
+  </section>
+    
+       <script src="jslab1.js"></script>
+</body>
+</html>

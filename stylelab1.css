@@ -1,0 +1,199 @@
+body {
+  font-family: "#9Slide03 Roboto Mono", Times, serif, sans-serif;
+  margin: 0px;
+  padding: 00;
+  background-color: #f7f7f7;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #555;
+}
+
+/* Tabs in Lab1 */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+.back-arrow {
+  position: fixed;
+  top: 0%;
+  left: 10px;
+  font-size: 35px;
+  text-decoration: none;
+  color: #f0ebeb;
+  transition: color 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+.back-arrow:hover {
+  color: #666;
+  transform: scale(1.1);
+}
+
+/* Section styling */
+.tab-content {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 40px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-section label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-section input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Section */
+.search-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Section */
+
+.table-section {
+  margin-bottom: 9%;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Centering table headers */
+.table-section table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.table-section table th {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-section table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Button styles */
+.table-section button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.table-section button:last-child {
+  margin-right: 0;
+}
+
+/* Row hover effect */
+.table-section table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Alternating row colors */
+.table-section table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

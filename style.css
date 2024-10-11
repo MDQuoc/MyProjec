@@ -1,0 +1,446 @@
+body {
+  font-family: "#9Slide03 Roboto Mono", Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #40c4ff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .logo {
+  font-size: 1.5em;
+  color: white;
+}
+
+.top-bar .search-bar input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.top-bar .login {
+  background-color: #ffffff;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-bar .login:hover {
+  background-color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #303f9f;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: rgb(236, 226, 226);
+  text-decoration: none;
+  padding: 14px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  background-color: #5c6bc0;
+}
+
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a.active {
+  background-color: #12b6d7;
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+
+/* Main Content */
+#content {
+  padding: 50px;
+  
+}
+
+.tab-content {
+  display: none;
+  
+}
+
+.tab-content.active{
+  display: block; 
+  
+}
+#home{
+text-align: center;
+}
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h1 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.grid-item h1 a:hover {
+  color: #40c4ff;
+}
+@media (max-width: 768px) {
+  form input[type="text"] {
+    width: 100%;
+  }
+}
+/* style about */
+.cv-container {
+  display: flex;
+  align-items: flex-start;
+  min-height: 600px;
+  width: 80%;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  width: 35%;
+  background-color: #EEE2D4;
+  padding: 20px;
+}
+.left-column h2{
+  position: relative;             
+    padding-left: 30px; 
+  }
+    .left-column h2:before {
+      content: "•";                   
+      position: absolute;           
+      left: 0;                        
+      top: 0;                         
+      color: #121111;                 
+      font-size: 1.2em;              
+    }
+.right-column {
+  height: 500px;
+  overflow-y: auto;
+  width: 65%;
+  padding: 10px;
+  overflow: visible;
+}
+.right-column h2 {
+  position: relative;             
+  padding-left: 10px;             
+}
+
+.right-column h2:before {
+  content: "•";                  
+  position: absolute;            
+  left: -15px;                    
+  top: 0;                        
+  color: #121111;                
+  font-size: 1.2em;              
+}
+.right-column p {
+  margin-left: 20px; 
+  line-height: 1.6; 
+  margin-bottom: 10px;
+} 
+.profile-pic {
+  position: relative;
+  width: 150px; 
+  height: 150px;
+  margin: 0 auto; 
+  border-radius: 50%; 
+  border: 5px solid #f8fafb; 
+  overflow: hidden; /
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.contact-info {
+  margin-top: 45px;
+  margin-left: 40px; 
+}
+.contact-info p{
+  padding-left: 15px;
+}
+.skills,
+.hobbies {
+  margin-top: 30px;
+  margin-left: 40px; 
+}
+.hobbies ol {
+  padding-left: 40px;
+}
+
+.hobbies ol li {
+  margin-left: 0; /* Bỏ margin-left để không làm lệch các mục ra bên ngoài */
+  padding-left: 0px; /* Thêm padding-left cho các mục bên trong */
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+.name-title {
+  margin-top: 50px; 
+ 
+}
+.name-title h1 {
+  margin-top: 100px;
+  margin: 0;
+  margin-left: 80px;
+  font-size: 4em;
+  color: #333;
+}
+.name-title H3{
+  padding-left: 140px;
+  margin: 10px 0; 
+  font-size: 1.5em; 
+  color: #666; 
+  position: relative;  
+   /* Đảm bảo không có khoảng cách trái nào */
+   margin-bottom: 38px;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+
+  display: flex;   
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  margin-left: 20px;
+}
+
+.skills ul li .stars {
+  display: inline-block; 
+  font-size: 20px;/* Đảm bảo phần chứa sao là một khối ngang */
+}
+
+.fa {
+  margin-right: 5px; }
+.skills ul li span {
+  margin-right: 20%; /
+}
+.education{
+  margin-top: 30px;
+  margin-left: 40px; 
+}
+
+.work-experience{
+  margin-top: 30px;
+  margin-left: 40px; 
+}
+/* login*/
+
+/* Modal Styling */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Modal Content - Adjusted Margins */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Center modal with less margin */
+  padding: 15px; /* Keep padding for inner spacing */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 90%; /* Increased width */
+  max-width: 350px; /* Max width for smaller screens */
+  text-align: center;
+}
+
+/* Close Button Styling */
+.close {
+  color: #000;
+  float: right;
+  font-size: 24px; /* Font size for close button */
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #1b9a2e; /* Change color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items */
+  width: 100%; /* Full width for form */
+}
+
+/* Label Styling */
+label {
+  margin-left: 60px;
+  width: 100%;
+  text-align: left;
+  margin-top: 8px; /* Adjusted margin */
+  font-weight: bold;
+  font-size: 14px; /* Smaller font size */
+}
+
+/* Input Fields - Adjusted Sizes */
+input[type="text"],
+input[type="password"] {
+  width: 80%; 
+  max-width: 300px; /* Optional: Set a maximum width */
+  padding: 8px; /* Consistent padding */
+  margin-top: 5px; /* Adjusted margin */
+  border: 1px solid #97d0e1;
+  border-radius: 30px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+}
+
+/* Button Styling - Adjusted */
+button {
+  margin-top: 10px; /* Spacing above button */
+  padding: 8px 10px; /* Reduced padding for smaller button */
+  width: 85%; /* Set a specific width, adjust as necessary */
+   background-color: #5c6bc0;
+  ; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+}
+
+button:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  margin-top: 8px; /* Reduced margin */
+  width: 100%;
+  text-align: right;
+  padding-right: 60px;
+}
+
+.forgot-password a {
+  color: #5c6bc0; /* Link color */
+  text-decoration: none;
+  font-size: 12px; /* Smaller font size */
+}
+
+.forgot-password a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Sign Up Text */
+.signup {
+  margin-top: 8px; /* Reduced margin */
+  width: 100%;
+  display: flex; /* Horizontal alignment */
+  justify-content: center; /* Center items */
+  align-items: center; /* Vertical alignment */
+}
+
+.signup p {
+  margin: 0; 
+  font-size: 12px; 
+}
+
+.signup a {
+  color: #5c6bc0; 
+  text-decoration: none;
+  margin-left: 5px; 
+}
+
+.signup a:hover {
+  text-decoration: underline; 
+}
+
+
+
+
+
+
+
+
