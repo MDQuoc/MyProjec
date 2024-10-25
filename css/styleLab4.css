@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar li {
+  font-size: 14px;
+}
+
+nav ul li a.active {
+  background-color: #555;
+}
+
+nav ul li {
+  padding-top: 30px;
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #555;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increased gap between boxes */
+  margin: 20px 0;
+}
+
+/* First Box: Profile Information Styling */
+.profile-container {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1b1212c7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.welcome-message h2 {
+  font-size: 40px;
+}
+
+.welcome-message a {
+  color: #2f00bc;
+  font-size: 20px; /* Larger font for the link */
+  text-decoration: none;
+}
+
+/* Second Box: Streak Information Styling */
+.streak-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 0px; /* Larger corner radius */
+  font-size: 18px;
+  border: 2px solid #ddd;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.streak-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekly-streak,
+.current-streak,
+.activity-summary {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.weekly-streak {
+  font-size: 18px;
+  color: #333;
+}
+
+.current-streak {
+  font-size: 18px;
+  padding-left: 10px;
+}
+.current-streak p {
+  margin-left: 40px;
+}
+
+.activity-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.progress-bar-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg); /* Rotate the circle to start from the top */
+}
+
+.progress-ring__circle-bg {
+  stroke-dasharray: 138;
+  stroke-dashoffset: 0;
+}
+
+.progress-ring__circle {
+  stroke-dasharray: 138;
+  stroke-dashoffset: calc(
+    138 - (138 * 11 / 30)
+  ); /* Dynamic progress calculation for the orange part */
+  stroke-linecap: round;
+}
+
+/* Inner smaller circle inside the large progress ring */
+.inner-small-circle {
+  stroke: #008000; /* Light gray circle */
+  stroke-width: 5; /* Thinner stroke */
+  fill: transparent;
+}
+
+.activity-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.orange-dot {
+  color: #ffa500;
+}
+
+.green-dot {
+  color: #008000;
+}
+
+.activity-details a {
+  color: #5624d0;
+  margin-left: 80px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* */
+.course-section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-tabs ul {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.course-tabs li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.course-tabs a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-right: 10px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.course-item img {
+  width: 200px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.course-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.course-details p {
+  font-size: 14px;
+  color: #555;
+}
+.course-item:last-child {
+  margin-right: 0; 
+}
+/* */
+.recommendation-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.recommendation-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.header-container {
+  display: flex; 
+  justify-content: space-between;
+  width: 100%; 
+  margin-bottom: 20px;
+}
+.header-container a{
+  margin-right: 45% ;
+  
+}
+
+.header-container h3 {
+  margin: 0; 
+  font-size: 24px;
+
+}
+
+.edit-link {
+  padding-top: 10px;
+  color: #0a58ca;
+  font-size: 14px;
+  
+  font-weight: bold;
+}
+
+
+.recommendation-courses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 23%;
+  text-align: center;
+}
+
+.recommendation-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.course-details h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.course-details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.personalize-section {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personalize-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.personalize-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.personalize-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.personalize-content button:hover {
+  background-color: #0056b3;
+}
+/* back */
+.back-arrow {
+  position: absolute; /* Sử dụng position: absolute */
+  top: 13px; /* Đặt vị trí cách từ trên cùng 100 pixels */
+  left: 10px; /* Đặt vị trí cách từ trái 10 pixels */
+  font-size: 35px;
+  text-decoration: none;
+  color: #f0ebeb;
+  transition: color 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+.back-arrow:hover {
+  color: #666;
+  transform: scale(1.1);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Dashboard</title>
+    <link rel="stylesheet" href="/css/styleLab4.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Lab4 - WebSite</h1>
+      <a href="javascript:void(0)" class="back-arrow" onclick="goBackToLabs()"
+        >&#8592;</a
+      >
+      <nav>
+        <ul>
+          <li><a href="#">Business Operations</a></li>
+          <li><a href="#">Cloud Computing</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">IT Operations</a></li>
+          <li><a href="#">Language Learning</a></li>
+          <li><a href="#">Leadership & Management</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="welcome-section">
+      <!-- First Box: Profile Information -->
+      <div class="profile-container">
+        <div class="profile-info">
+          <div class="profile-icon">Q</div>
+          <div class="welcome-message">
+            <h2>Welcome back, Do Minh Quoc</h2>
+            <a href="#">Add occupation and interests</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Box: Streak Information -->
+      <div class="streak-container">
+        <div class="streak-info">
+          <div class="weekly-streak">
+            <h2>Weekly streak</h2>
+            <p>One ring down, one to go. Keep it up!</p>
+          </div>
+          <div class="current-streak">
+            <h2><span class="icon-flame">🔥</span> 2 weeks</h2>
+            <p>Current streak</p>
+          </div>
+          <div class="activity-summary">
+            <div class="progress-bar-container">
+              <svg class="progress-ring" width="50" height="50">
+                <!-- Outer Circle (Progress Background) -->
+                <circle
+                  class="progress-ring__circle-bg"
+                  stroke="#DEE2E6"
+                  stroke-width="5"
+                  fill="transparent"
+                  r="22"
+                  cx="25"
+                  cy="25"
+                />
+                <!-- Outer Circle (Progress Indicator) -->
+                <circle
+                  class="progress-ring__circle"
+                  stroke="#ffa500"
+                  stroke-width="5"
+                  fill="transparent"
+                  r="22"
+                  cx="25"
+                  cy="25"
+                />
+                <!-- Inner Circle (Smaller inside the large one) -->
+                <circle
+                  class="inner-small-circle"
+                  stroke="#008000"
+                  stroke-width="3"
+                  fill="transparent"
+                  r="10"
+                  cx="25"
+                  cy="25"
+                />
+              </svg>
+            </div>
+            <div class="activity-details">
+              <p><span class="orange-dot">●</span> 11/30 course min</p>
+              <p><span class="green-dot">●</span> 4/1 visit</p>
+              <p>Oct 13 - 19</p>
+              <a href="#">See all activity</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <h3>Pick up where you left off</h3>
+      <div class="course-tabs">
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Learning paths</a></li>
+          <li><a href="#">Certification preparation</a></li>
+        </ul>
+      </div>
+      <div class="course-list">
+        <div class="course-item">
+          <img src="img/images.jpg" alt="Video Icon" />
+          <div class="course-details">
+            <h4>FPT_ISMS Refresh Training S2 2024 (Video)</h4>
+            <p>1. Introduction</p>
+            <p>Lecture • 1m</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="img/hinh2.jpg" alt="Video Icon" />
+          <div class="course-details">
+            <h4>MuleSoft 4.X Complete Guide For Beginners</h4>
+            <p>2. Integration introduction</p>
+            <p>Lecture • 6m left</p>
+          </div>
+        </div>
+        <div class="course-item">
+          <img src="img/qiz.jpg" alt="Quiz Icon" />
+          <div class="course-details">
+            <h4>English Vocabulary: 504 Essential Words</h4>
+            <p>7. Quiz and Questions</p>
+            <p>Quiz • 9 questions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Section -->
+    <section class="recommendation-section">
+      <div class="header-container">
+        <h3>Based on your certification interests, we recommend</h3>
+        <a href="#" class="edit-link">Edit certification interests</a>
+      </div>
+    
+      <div class="recommendation-courses">
+        <div class="recommendation-item">
+          <img
+            src="https://i.ytimg.com/vi/A_7A_1yY-sA/maxresdefault.jpg"
+            alt="Course Image"
+          />
+          <div class="course-details">
+            <h4>Oracle Certified Associate Java Programmer (OCAJP)</h4>
+            <p>Andrii Piatakha, Learn IT University</p>
+            <p>Rating: 4.6 (438 reviews)</p>
+          </div>
+        </div>
+    
+        <div class="recommendation-item">
+          <img
+            src="https://i.ytimg.com/vi/lWKIVLAIGnc/maxresdefault.jpg"
+            alt="Course Image"
+          />
+          <div class="course-details">
+            <h4>Oracle Java Certification - Pass the Associate Exam</h4>
+            <p>Tim Buchalka, Learn Programming Academy</p>
+            <p>Rating: 4.6 (6906 reviews)</p>
+          </div>
+        </div>
+    
+        <div class="recommendation-item">
+          <img
+            src="https://www.codejava.net/images/articles/videos/top-java-core-ee/Complete_Java_Masterclass.jpg"
+            alt="Course Image"
+          />
+          <div class="course-details">
+            <h4>Complete Java SE 8 Developer Bootcamp</h4>
+            <p>Intertech Training, Jeff Jensen</p>
+            <p>Rating: 4.6 (9726 reviews)</p>
+          </div>
+        </div>
+        <div class="recommendation-item">
+          <img src="https://licensecounter.jp/devops-hub/blog/Spring_Blog3%20%281%29.png" alt="Course Image" />
+          <div class="course-details">
+            <h4>Spring Professional Certification Exam - Module 02</h4>
+            <p>Dominik Cebula</p>
+            <p>Rating: 4.6 (1121 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="personalize-section">
+      <div class="personalize-content">
+        <h3>Personalize your learning experience</h3>
+        <p>
+          Add your occupation and interests to get better content
+          recommendations.
+        </p>
+        <button>Add occupation and interests</button>
+      </div>
+    </section>
+  </body>
+  <script src="/js/jslab4.js"></script>
+</html>
