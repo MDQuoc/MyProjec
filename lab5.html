@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learning Platform</title>
+    <link rel="stylesheet" href="css/stylelab5.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="javascript:void(0)" class="back-arrow" onclick="goBackToLabs()"
+      >&#8592;</a>
+      <h1>Lab 5 - My learning</h1>
+      <div class="watch-time">
+        87hr 36min watched <i class="fas fa-info-circle"></i>
+        <a href="#" style="color: #bdc3c7; margin-left: 10px"
+          >View all activity</a
+        >
+      </div>
+    </header>
+
+    <nav class="nav-tabs">
+      <ul>
+        <li data-tab="courses" class="active">
+          <a href="#" onclick="showTab('courses')">All Courses</a>
+        </li>
+        <li data-tab="learning-paths">
+          <a href="#" onclick="showTab('learning-paths')">Learning Paths</a>
+        </li>
+        <li data-tab="certifications">
+          <a href="#" onclick="showTab('certifications')">Certifications</a>
+        </li>
+        <li data-tab="archived">
+          <a href="#" onclick="showTab('archived')">Archived</a>
+        </li>
+        <li data-tab="learning-tools">
+          <a href="#" onclick="showTab('learning-tools')">Learning tools</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="courses" class="tab-content active">
+      <div class="filters">
+        <div class="filter-group">
+          <label>Sort by</label>
+          <select>
+            <option>Recently Accessed</option>
+            <option>Title A-Z</option>
+            <option>Progress</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Filter by</label>
+          <select>
+            <option>Categories</option>
+          </select>
+          <select>
+            <option>Progress</option>
+          </select>
+          <select>
+            <option>Instructor</option>
+          </select>
+          <a href="#" class="reset-btn">Reset</a>
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search my courses" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course Card 1 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="https://cucumber.fsoft.com.vn/wp-content/uploads/sites/14/2023/03/130049862_1139717059831877_1627102104158973990_n-1024x576.jpg"
+              alt="ISMS Training"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              FPT_ISMS Refresh Training S2 2024 (Vietnamese)
+            </h3>
+            <div class="course-instructor">FSOFT Content Development</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <div class="course-footer">
+              <span>100% complete</span>
+              <div class="stars">
+                ☆☆☆☆☆ <span style="color: #666">Leave a rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 2 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="https://img-c.udemycdn.com/course/750x422/4695284_83ea_6.jpg"
+              alt="Spring Boot"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              The Complete Spring Boot Development Bootcamp
+            </h3>
+            <div class="course-instructor">Learn The Part Inc., Rayan Slim</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <div class="course-footer">
+              <span>100% complete</span>
+              <div class="stars">
+                ☆☆☆☆☆ <span style="color: #666">Leave a rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 3 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="https://cdn.shopaccino.com/igmguru/articles/MuleSoft-Tutorial-900x507.png"
+              alt="MuleSoft"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              MuleSoft 4.X Complete Guide For Beginners
+            </h3>
+            <div class="course-instructor">Chinna Reddy</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 1%"></div>
+            </div>
+            <div class="course-footer">
+              <span>1% complete</span>
+              <div class="stars">
+                ☆☆☆☆☆ <span style="color: #666">Leave a rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 4 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="https://i.ytimg.com/vi/P41gd6dYLDQ/maxresdefault.jpg"
+              alt="English Vocabulary"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              English Vocabulary: 504 Essential Words
+            </h3>
+            <div class="course-instructor">Mister Rabiey</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 15%"></div>
+            </div>
+            <div class="course-footer">
+              <span>15% complete</span>
+              <div class="stars" style="color: #f39c12">
+                ★★★★★ <span style="color: #666">Your rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Course Card 5 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="data:image/png;base64,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"
+              alt="Python"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">Angular and TypeScript</h3>
+            <div class="course-instructor">TY Tran</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 25%"></div>
+            </div>
+            <div class="course-footer">
+              <span>25% complete</span>
+              <div class="stars" style="color: #f39c12">
+                ★★★☆☆ <span style="color: #666">Your rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Course Card 6 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="img/hinh3.jpg"
+              alt="English Vocabulary"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              Khóa học Java Online Tiếng Việt toàn tập (VietJack)
+            </h3>
+            <div class="course-instructor">Nguyễn Tuyền,Ken Jack</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <div class="course-footer">
+              <span>90% complete</span>
+              <div class="stars" style="color: #f39c12">
+                ★★★★☆<span style="color: #666">Your rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Course Card 7-->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="img/lab5hin2.png"
+              alt="English Vocabulary"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              React Ultimate - React.JS Cơ Bản Từ Z Đến A Cho Beginners
+            </h3>
+            <div class="course-instructor">Hỏi Dân IT với Eric .</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <div class="course-footer">
+              <span>75% complete</span>
+              <div class="stars" style="color: #f39c12">
+                ★★★★☆ <span style="color: #666">Your rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Course Card 8 -->
+        <div class="course-card">
+          <div class="course-thumbnail">
+            <img
+              src="img/lab5hinh1.jpg"
+              alt="English Vocabulary"
+            />
+            <div class="menu-dots">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">
+              React State Manager - Redux Toolkit, React Query, Redux Saga
+            </h3>
+            <div class="course-instructor">Hỏi Dân IT với Eric .</div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 55%"></div>
+            </div>
+            <div class="course-footer">
+              <span>55% complete</span>
+              <div class="stars" style="color: #f39c12">
+                ★★★★★ <span style="color: #666">Your rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Paths Tab Content -->
+    <div id="learning-paths" class="tab-content">
+      <div class="card-container">
+        <!-- Path Card 1 -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex">
+              <div class="logo bg-gray-100">
+                <img
+                  src="img/fpt.png"
+                  alt="Training Logo"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                    >Learning path</span
+                  >
+                </div>
+                <h3 class="text-xl font-medium">
+                  Induction Training_GAAFOFY (VI)
+                </h3>
+              </div>
+            </div>
+            <button class="text-gray-400 hover:text-gray-600">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="1"></circle>
+                <circle cx="12" cy="5" r="1"></circle>
+                <circle cx="12" cy="19" r="1"></circle>
+              </svg>
+            </button>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 16.67%"></div>
+          </div>
+          <p class="text-gray-600 mt-2">1 of 6 items complete</p>
+        </div>
+
+        <!-- Path Card 2 -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="flex justify-between items-start mb-6">
+            <div class="flex">
+              <div class="logo bg-gray-100">
+                <img
+                src="img/fpt.png"
+                  alt="Training Logo"
+                />
+              </div>
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                    >Learning path</span
+                  >
+                </div>
+                <h3 class="text-xl font-medium">
+                  Induction Training for BO_IT_Mandatory (VI)
+                </h3>
+              </div>
+            </div>
+            <button class="text-gray-400 hover:text-gray-600">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="1"></circle>
+                <circle cx="12" cy="5" r="1"></circle>
+                <circle cx="12" cy="19" r="1"></circle>
+              </svg>
+            </button>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+          </div>
+          <p class="text-gray-600 mt-2">9 of 9 items complete</p>
+        </div>
+      </div>
+    </div>
+    <div id="certifications" class="tab-content">
+      <div class="p-6">
+        <!-- My Badges Section -->
+        <section class="mb-8">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold">My badges</h2>
+            <button class="cursor-pointer">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-semibold">
+                You have earned and uploaded 0 badges
+              </span>
+              <i class="fas fa-info-circle text-gray-500"></i>
+            </div>
+            <button
+              class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded"
+            >
+              Import new badge
+            </button>
+          </div>
+
+          <p class="text-gray-600 mt-2">
+            Currently, there are no badges uploaded to your profile. Begin your
+            journey towards your certification goals or <p><a href="#" class="text-purple-600 hover:text-purple-700">
+              upload your third-party badges
+            </a>to your profile and impress your manager and peers with your
+            accomplishments. </p>
+            
+            Start preparing for your next certificate today!
+          </p>
+        </section>
+
+        <!-- Certification Preparation Section -->
+        <section>
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold">Certification preparation</h2>
+            <button class="cursor-pointer">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+          </div>
+
+          <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-semibold">
+                You are preparing for 4 certifications
+              </span>
+              <i class="fas fa-info-circle text-gray-500"></i>
+            </div>
+            <button
+              class="border-2 border-gray-800 text-gray-800 px-6 py-2 rounded hover:bg-gray-100 font-bold"
+            >
+              Explore certification preparation
+            </button>
+          </div>
+
+          <!-- Certification Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <!-- Oracle Certification Card -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <img
+                    src="img/tải xuống.jpg"
+                    alt="Oracle Certified Associate"
+                    class="w-20 h-20 object-contain"
+                  />
+                  <div>
+                    <h3 class="text-xl font-medium">
+                      Oracle Certified Associate, Java SE 8 Programmer
+                    </h3>
+                    <p class="text-gray-600">Oracle</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- ISTQB Certification Card -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <img
+                    src="img/lab5.jpg"
+                    alt="ISTQB Logo"
+                    class="w-20 h-20 object-contain"
+                  />
+                  <div>
+                    <h3 class="text-xl font-medium">
+                      ISTQB® Certified Tester Foundation Level (CTFL)
+                    </h3>
+                    <p class="text-gray-600">Brightest</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-gray-600">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Archived Tab Content -->
+    <div id="archived" class="tab-content">
+      <div class="course-card">
+        <div class="course-thumbnail">
+          <img
+            src="https://imgcdn.tapchicongthuong.vn/thumb/720x420/tcct-media/21/5/5/csr.jpg"
+            alt="English Vocabulary"
+          />
+          <div class="menu-dots">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="course-content">
+          <h3 class="course-title">
+            FPT_Corporate Social Responsibility Training 2024
+          </h3>
+          <div class="course-instructor">FSOFT Content Development</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+          </div>
+          <div class="course-footer">
+            <span>100% complete</span>
+            <div class="stars" style="color: #f39c12">
+              ★★★★☆ <span style="color: #666">Your rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Learning Tools Tab Content -->
+    <div id="learning-tools" class="tab-content">
+      <main class="content">
+        <h2>Learning tools</h2>
+        <p class="description">
+          Explore a diverse range of courses and take advantage of these versatile tools to 
+          gain knowledge, skills, and confidence at your own pace.
+        </p>
+
+        <div class="tools-grid">
+           <div class="tool-card">
+               <div class="tool-header">
+                    <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <h3 class="tool-title">Learning reminders</h3>
+                        <p class="tool-description">Set time aside to learn and get reminders using your scheduler.</p>
+                   </div>
+               </div>
+                <p class="tool-status">You currently have no ongoing reminders.</p>
+                <a href="#" class="see-more">See more</a>
+            </div>
+
+          <div class="tool-card">
+              <div class="tool-header">
+                  <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <div>
+                      <h3 class="tool-title">Reflections <span class="beta-badge">Beta</span></h3>
+                      <p class="tool-description">Take time to reflect to strengthen your learning.</p>
+                  </div>
+              </div>
+              <p class="tool-status">You have currently no recorded reflections on your learning journey.</p>
+          </div>
+          
+      </main>
+    </div>
+  </body>
+  <script src="js/jsslab5.js"></script>
+</html>
